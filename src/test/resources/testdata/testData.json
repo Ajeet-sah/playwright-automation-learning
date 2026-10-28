@@ -1,0 +1,36 @@
+{
+  "loginData": {
+    "validUser": {
+      "username": "admin@albertapayments.com",
+      "password": "Password123!"
+    },
+    "invalidUser": {
+      "username": "invalid_user@albertapayments.com",
+      "password": "WrongPassword123",
+      "expectedErrorMessage": "Invalid credentials"
+    },
+    "emptyEmail": {
+      "username": "",
+      "password": "Password123!",
+      "expectedEmailError": "Email is required"
+    },
+    "emptyPassword": {
+      "username": "admin@albertapayments.com",
+      "password": "",
+      "expectedPasswordError": "Password is required"
+    },
+    "shortPassword": {
+      "username": "admin@albertapayments.com",
+      "password": "123",
+      "expectedPasswordError": "Password must be at least 6 characters"
+    }
+  },
+  "menuData": {
+    "searchQueries": [
+      "Pizza",
+      "Burger",
+      "Drink"
+    ],
+    "nonExistentQuery": "xyzNonExistentItem999"
+  }
+}

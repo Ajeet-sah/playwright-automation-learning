@@ -1,8 +1,42 @@
+# Maven & Build Target
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
 
-# Playwright
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs and Execution Artifacts
+logs/
+*.log
+reports/
+screenshots/
+test-results/
+traces/
+
+# Playwright Browser Driver & Cache
 node_modules/
-/test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Secrets & Environment Variables
+.env
+credentials.json
+*.secret
